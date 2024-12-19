@@ -40,12 +40,12 @@ body {
 }
 
 .nav-links a {
-    color: var(--neon-white);
+    color: var(--accent-neon);
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-red);
 }
 
 /* Hero Section */
