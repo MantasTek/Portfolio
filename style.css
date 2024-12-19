@@ -338,7 +338,7 @@ body {
 /* Footer */
 .footer {
     background-color: var(--primary-dark);
-    color: var(--text-light);
+    color: var(--accent-gold);
     border-top: 2px solid var(--accent-neon);
     padding: 2rem 1rem;
     text-align: center;
