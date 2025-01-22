@@ -1,4 +1,6 @@
 import React from 'react';
+import Weather from './Weather';
+
 
 const Hero = () => {
     return (
@@ -7,8 +9,13 @@ const Hero = () => {
                 <img src="/images/my photo.jpg" alt="Mantas" className="portrait" />
                 <h1>Mantas Petrovas</h1>
                 <p className="tagline">Program Developer .NET</p>
+
+                <Weather />
+                
                 <div className="hero-buttons">
-                    <a href="/CV.pdf" download className="cv-button">Download CV</a>
+                <a href="/CV.pdf" download className="cv-button">
+                    Download CV
+                </a>
                     <div className="social-links">
                         <a href="https://www.linkedin.com/in/mantas-petrovas-4260a4a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a href="https://github.com/MantasTek" target="_blank" rel="noopener noreferrer">GitHub</a>
