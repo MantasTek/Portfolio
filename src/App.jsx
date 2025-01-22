@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import References from './components/References';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Weather from './components/Weather';
 
 function App() {
   return (
