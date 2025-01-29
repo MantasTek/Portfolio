@@ -69,8 +69,6 @@ body {
     line-height: 1.6;
 }
 
-
-
 /* Navigation */
 .navbar {
     background-color: var(--bg-darkest);
@@ -98,13 +96,11 @@ body {
 
 .nav-links a {
     color: var(--accent-neon);
-    transition: color 0.3s ease;
-    
+    transition: color 0.3s ease; 
 }
 
 .nav-links a:hover {
-    color: var(--accent-red);
-    
+    color: var(--accent-red);    
 }
 
 /* Hero Section */
@@ -207,7 +203,6 @@ body {
     gap: 1rem;
     color: var(--text-light);
 }
-
 
 /* About Section */
 .about {
@@ -334,6 +329,7 @@ body {
     border-radius: 3px;
     margin-right: 0.5rem;
 }
+
 /* References Section */
 .references {
     background-color: var(--bg-darkest);
@@ -523,7 +519,6 @@ body {
     }
 }
 
-
 /* Footer */
 .footer {
     background-color: var(--primary-dark);
@@ -673,6 +668,7 @@ body {
         max-width: 1200px;
         margin: 0 auto;
     }
+
     /* References Desktop */
     .references {
         padding: 5rem 2rem;
@@ -701,7 +697,6 @@ body {
         font-size: 1rem;
     }
 
-
     /* Contact Desktop */
     .contact {
         padding: 5rem 2rem;
@@ -718,7 +713,6 @@ body {
         display: block;
         margin: 0 auto;
     }
-
 
     /* Footer Desktop */
     .footer {
@@ -744,4 +738,3 @@ body {
     .footer-text {
         font-size: 1rem;
     }
-

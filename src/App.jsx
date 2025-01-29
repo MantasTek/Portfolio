@@ -20,6 +20,7 @@ function App() {
         <Portfolio />
         <References />
         <Contact />
+        <Weather />
       </main>
       <Footer />
     </div>
