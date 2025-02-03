@@ -43,7 +43,7 @@ src/
 ## Setup Instructions
 
    Clone the repository:
-   git clone https://github.com/MantasTek/Portfolio.git
+   git clone [https://github.com/MantasTek/Portfolio.git]
 
    Install dependencies:
    cd Portfolio

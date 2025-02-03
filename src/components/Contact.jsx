@@ -38,7 +38,6 @@ const Contact = () => {
         }
     };
 
-    
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -46,7 +45,6 @@ const Contact = () => {
             [name]: value
         }));
 
-        
         const error = validateField(name, value);
         setErrors(prev => ({
             ...prev,
@@ -54,12 +52,10 @@ const Contact = () => {
         }));
     };
 
-    
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        
         const newErrors = {};
         Object.keys(formData).forEach(field => {
             const error = validateField(field, formData[field]);
@@ -76,13 +72,11 @@ const Contact = () => {
             
             await new Promise(resolve => setTimeout(resolve, 1000));
             
-            
             setSuccessMessage('Message sent successfully! I will get back to you soon.');
             
             setFormData({ name: '', email: '', message: '' });
             
             setErrors({});
-            
             
             setTimeout(() => {
                 setSuccessMessage('');

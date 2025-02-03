@@ -20,6 +20,9 @@ function App() {
         <Portfolio />
         <References />
         <Contact />
+        <section className="weather-section">
+          <Weather />
+        </section>
       </main>
       <Footer />
     </div>
