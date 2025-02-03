@@ -11,21 +11,21 @@ import Weather from './components/Weather';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Portfolio />
-        <References />
-        <Contact />
-        <section className="weather-section">
-          <Weather />
-        </section>
-      </main>
-      <Footer />
-    </div>
+      <div className="App">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Portfolio />
+          <References />
+          <Contact />
+          <section className="weather-section">
+            <Weather />
+          </section>
+        </main>
+        <Footer />
+      </div>
   );
 }
 

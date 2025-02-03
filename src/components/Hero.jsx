@@ -1,10 +1,9 @@
 import React from 'react';
-
 const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-content">
-                <img src="/image/myphoto.jpg" alt="Mantas" className="portrait" />
+                <img src="/src/image/myphoto.jpg" alt="Mantas" className="portrait" />
                 <h1>Mantas Petrovas</h1>
                 <p className="tagline">Program Developer .NET</p>
                 <div className="hero-buttons">
