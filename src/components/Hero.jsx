@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-content">
-                <img src="/images/my photo.jpg" alt="Mantas" className="portrait" />
+                <img src="/images/myphoto.jpg" alt="Mantas" className="portrait" />
                 <h1>Mantas Petrovas</h1>
                 <p className="tagline">Program Developer .NET</p>
                 <div className="hero-buttons">
