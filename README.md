@@ -1,20 +1,14 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refres
+# Portfolio Project
 
 ## Description
 
-A personal portfolio website built with React and modern web technologies. This project showcases my skills, projects, and professional journey as a .NET Program Developer.
+A personal portfolio website built with React, Vite, and modern web technologies, showcasing my journey as a .NET Program Developer. Features both local and Lithuanian weather display using OpenWeather API.
 
 ## Features
 
-- Responsive navigation
+- Responsive navigation with smooth scrolling
 - Interactive sections (About, Skills, Portfolio, References)
+- Real-time weather display for Lithuania and local location
 - Contact form with validation
 - CV download functionality
 - Social media integration
@@ -23,75 +17,93 @@ A personal portfolio website built with React and modern web technologies. This 
 ## Technologies Used
 
 - React 18.2.0
-- Vite (for build tooling)
+- Vite
+- OpenWeather API
 - Modern CSS with custom properties
 - JavaScript ES6+
-
-## Methods and Principles
-
-- Component-Based Architecture: Utilizing React's component system for modular, reusable code
-- Mobile-First Design: Responsive design approach ensuring compatibility across all devices
-- Form Validation: Client-side validation with immediate user feedback
-- CSS Custom Properties: Using variables for consistent theming and easy maintenance
-- Semantic HTML: Following best practices for accessibility and SEO
-- Error Handling: Comprehensive error management in form submissions
-- Git Version Control: Feature branches and meaningful commit messages
 
 ## Project Structure
 
 src/
-├── components/     # React components
-├── styles/        # CSS styles
-├── assets/        # Static assets
-└── App.jsx        # Main application component
+├── components/
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── Navbar.jsx
+│   ├── Portfolio.jsx
+│   ├── References.jsx
+│   ├── Skills.jsx
+│   └── Weather.jsx
+├── styles/
+│   └── main.css
+├── App.jsx
+└── main.jsx
 
 ## Setup Instructions
 
-1. Clone the repository:
+   Clone the repository:
+   git clone [https://github.com/MantasTek/Portfolio.git]
 
-   git clone https://github.com/MantasTek/Portfolio.git
-
-2. Install dependencies:
+   Install dependencies:
    cd Portfolio
    npm install
 
-3. Run development server:
+   Create .env file in root directory and add:
+   VITE_WEATHER_API_KEY=your_api_key
 
+   Run development server:
    npm run dev
 
-4. Build for production:
+   Build for production:
    npm run build
 
-## Features Implementation
+## Implemented Features
 
-### Form Validation
+## Weather Integration
 
-- Real-time input validation
-- Error messages for invalid inputs
-- Success confirmation
-- Prevents submission of invalid data
+   Real-time weather display for Lithuania
+   Local weather detection and display
+   Temperature, humidity, and wind information
+   Dynamic weather icons
 
-### Navigation
+## Form Validation
 
-- Smooth scrolling to sections
-- Mobile-responsive menu
-- Active section highlighting
+   Real-time input validation
+   Error messages for invalid inputs
+   Success confirmation
+   Prevents submission of invalid data
 
-### Portfolio Section
+## Navigation
 
-- Project showcase with descriptions
-- Links to GitHub repositories
-- Technology stack display
-- Project previews
+   Smooth scrolling to sections
+   Mobile-responsive menu
+   Active section highlighting
+
+## Portfolio Section
+
+   Project showcase with descriptions
+   Links to GitHub repositories
+   Technology stack display
+   Project previews
+
+## Methods and Principles
+
+   Component-Based Architecture using React
+   Mobile-First Design
+   CSS Custom Properties for theming
+   Semantic HTML for accessibility
+   Comprehensive error handling
+   Git version control
 
 ## Contact
 
-- GitHub: [MantasTek](https://github.com/MantasTek)
-- LinkedIn: [Mantas Petrovas](https://www.linkedin.com/in/mantas-petrovas-4260a4a7/)
+   GitHub: MantasTek
+   LinkedIn: Mantas Petrovas
 
 ## Future Improvements
 
-- Integration with weather API
-- Project filtering capabilities
-- Animation enhancements
-- Blog section
+   Contact form backend integration
+   Enhanced animations
+   Project filtering capabilities
+   Blog section
