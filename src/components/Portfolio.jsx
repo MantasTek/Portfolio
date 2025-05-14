@@ -7,7 +7,7 @@ function Portfolio() {
             <div className="portfolio-grid">
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="/image/project-placeholder.jpg" alt="Project 1" />
+                        <img src="./images/project-placeholder.jpg" alt="Project 1" />
                     </div>
                     <div className="project-info">
                         <h3>Portfolio Website</h3>
