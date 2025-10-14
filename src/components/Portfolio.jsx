@@ -30,15 +30,18 @@ function Portfolio() {
                         <img src="/images/project-placeholder.jpg" alt="Project 2" />
                     </div>
                     <div className="project-info">
-                        <h3>Coming Soon</h3>
-                        <p>Future .NET project placeholder. This space will be updated with my upcoming projects.</p>
+                        <h3>BowlingHallManagement</h3>
+                        <p>Bowling hall management system.</p>
                         <div className="project-tech">
                             <span>.NET</span>
                             <span>C#</span>
                         </div>
-                        <button className="project-link" onClick={() => alert('Coming Soon!')}>
+                        <a href="https://github.com/MantasTek/BowlingHallManagement" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           className="project-link">
                             View on GitHub
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
