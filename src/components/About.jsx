@@ -8,7 +8,8 @@ const About = () => {
                 <div className="about-card">
                     <h3>About Me</h3>
                     <div className="about-item">
-                        <p>My name is Mantas Petrovas. I am a student at Nackademin, studying ProgramDevelopment.NET. I am 33 years old and from Lithuania. I have been living in Sweden for 5 years. I am a very ambitious and social person, always looking for new challenges.</p>
+                        <p>👋 My name is Mantas Petrovas, and I’m a student at Nackademin, studying Programutvecklare .NET. I am originally from Lithuania and have been living in Sweden for 7 years.
+                                I’m an ambitious and social person with a passion for learning, problem-solving, and building creative digital solutions. I enjoy taking on new challenges that push me to grow both personally and professionally. My goal is to combine logic and creativity to develop applications that make a real impact.</p>
                     </div>
                 </div>
 
