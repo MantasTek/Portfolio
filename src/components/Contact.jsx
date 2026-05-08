@@ -69,20 +69,23 @@ const Contact = () => {
         }
 
         try {
-            
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            setSuccessMessage('Message sent successfully! I will get back to you soon.');
-            
+            // Minimal no-backend fallback: open user's email client with prefilled subject/body
+            const subject = encodeURIComponent(`Contact from ${formData.name}`);
+            const body = encodeURIComponent(`${formData.message}\n\nFrom: ${formData.name} <${formData.email}>`);
+            const mailto = `mailto:?subject=${subject}&body=${body}`;
+
+            setSuccessMessage('Opening your email client to send the message...');
             setFormData({ name: '', email: '', message: '' });
-            
             setErrors({});
-            
+
+            // Open mail client
+            window.location.href = mailto;
+
             setTimeout(() => {
                 setSuccessMessage('');
             }, 5000);
         } catch (error) {
-            setErrors({ submit: 'Failed to send message. Please try again.' });
+            setErrors({ submit: 'Failed to open email client. Please try manually.' });
         } finally {
             setIsSubmitting(false);
         }
@@ -144,13 +147,13 @@ const Contact = () => {
                     </button>
 
                     {errors.submit && (
-                        <div className="error-message submit-error">
+                        <div className="error-message submit-error" role="alert">
                             {errors.submit}
                         </div>
                     )}
-                    
+
                     {successMessage && (
-                        <div className="success-message">
+                        <div className="success-message" role="status" aria-live="polite">
                             {successMessage}
                         </div>
                     )}

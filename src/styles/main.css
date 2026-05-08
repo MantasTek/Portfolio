@@ -56,12 +56,6 @@ html, body {
 }
 
 /* Global Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: var(--section-light);
     color: var(--text-dark);
@@ -101,6 +95,64 @@ body {
 
 .nav-links a:hover {
     color: var(--accent-red);    
+}
+
+/* Responsive navigation toggle (mobile) */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .nav-toggle-label span {
+        width: 26px;
+        height: 3px;
+        background: var(--accent-neon);
+        display: block;
+        border-radius: 2px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 64px;
+        background: var(--bg-darkest);
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
 }
 
 /* Hero Section */
