@@ -44,6 +44,46 @@ function Portfolio() {
                         </a>
                     </div>
                 </div>
+
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src="/images/project-placeholder.jpg" alt="CryptoChatApp" />
+                    </div>
+                    <div className="project-info">
+                        <h3>CryptoChatApp</h3>
+                        <p>A crypto-focused chat application for real-time communication and shared discussion.</p>
+                        <div className="project-tech">
+                            <span>Chat</span>
+                            <span>App</span>
+                        </div>
+                        <a href="https://github.com/MantasTek/CryptoChatApp"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src="/images/project-placeholder.jpg" alt="IPScanner" />
+                    </div>
+                    <div className="project-info">
+                        <h3>IPScanner</h3>
+                        <p>An IP scanning utility for discovering and inspecting network addresses.</p>
+                        <div className="project-tech">
+                            <span>Network</span>
+                            <span>Tool</span>
+                        </div>
+                        <a href="https://github.com/MantasTek/IPScanner"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     )

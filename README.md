@@ -2,13 +2,12 @@
 
 ## Description
 
-A personal portfolio website built with React, Vite, and modern web technologies, showcasing my journey as a .NET Program Developer. Features both local and Lithuanian weather display using OpenWeather API.
+A personal portfolio website built with React, Vite, and modern web technologies, showcasing my journey as a .NET Program Developer.
 
 ## Features
 
 - Responsive navigation with smooth scrolling
 - Interactive sections (About, Skills, Portfolio, References)
-- Real-time weather display for Lithuania and local location
 - Contact form with validation
 - CV download functionality
 - Social media integration
@@ -18,7 +17,6 @@ A personal portfolio website built with React, Vite, and modern web technologies
 
 - React 18.2.0
 - Vite
-- OpenWeather API
 - Modern CSS with custom properties
 - JavaScript ES6+
 
@@ -34,7 +32,6 @@ src/
 │   ├── Portfolio.jsx
 │   ├── References.jsx
 │   ├── Skills.jsx
-│   └── Weather.jsx
 ├── styles/
 │   └── main.css
 ├── App.jsx
@@ -49,9 +46,6 @@ src/
    cd Portfolio
    npm install
 
-   Create .env file in root directory and add:
-   VITE_WEATHER_API_KEY=your_api_key
-
    Run development server:
    npm run dev
 
@@ -59,13 +53,6 @@ src/
    npm run build
 
 ## Implemented Features
-
-## Weather Integration
-
-   Real-time weather display for Lithuania
-   Local weather detection and display
-   Temperature, humidity, and wind information
-   Dynamic weather icons
 
 ## Form Validation
 

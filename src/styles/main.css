@@ -74,88 +74,6 @@ body {
     left: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-brand {
-    color: var(--accent-gold);
-    text-shadow: 0 0 10px var(--neon-glow);
-}
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    color: var(--accent-neon);
-    transition: color 0.3s ease; 
-}
-
-.nav-links a:hover {
-    color: var(--accent-red);    
-}
-
-/* Responsive navigation toggle (mobile) */
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        width: 1px;
-        height: 1px;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .nav-toggle-label {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        cursor: pointer;
-        margin-left: auto;
-    }
-
-    .nav-toggle-label span {
-        width: 26px;
-        height: 3px;
-        background: var(--accent-neon);
-        display: block;
-        border-radius: 2px;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        right: 1rem;
-        top: 64px;
-        background: var(--bg-darkest);
-        padding: 0.75rem 1rem;
-        border-radius: 8px;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 0;
-    }
-}
-
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-purple) 100%);
     color: var(--text-light);
@@ -199,88 +117,6 @@ body {
 
 .cv-button,
 .social-links a {
-    background-color: transparent;
-    color: var(--text-light);
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid var(--text-light);
-    transition: all 0.3s ease;
-    width: 100%;
-    text-align: center;
-}
-
-.cv-button:hover,
-.social-links a:hover {
-    background-color: var(--accent-neon);
-    color: var(--primary-purple);
-    box-shadow: 0 0 10px var(--text-light);
-}
-
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    width: 100%;
-    align-items: center;
-}
-
-/* About Section */
-.about {
-    background-color: var(--primary-dark);
-    color: var(--text-light);
-    padding: 4rem 1rem;
-}
-
-.about h2 {
-    text-align: center;
-    color: var(--accent-neon);
-    text-shadow: 0 0 10px var(--neon-glow);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.about-card {
-    background-color: var(--bg-darkest);
-    padding: 1.5rem;
-    border-radius: 20px;
-    border: 3px solid var(--accent-neon);
-    box-shadow: 0 0 15px rgba(66, 26, 11, 0.1);
-}
-
-.about-card h3 {
-    color: var(--neon-white);
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.about-item {
-    background: linear-gradient(45deg, var(--primary-purple) 0%, var(--accent-red) 100%);
-    color: var(--text-light);
-    padding: 0.8rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.about-item:hover {
-    transform: translateX(10px);
-    background: linear-gradient(45deg, var(--accent-red) 0%, var(--primary-purple) 100%);
-}
-
-/* Skills Section */
-.skills {
-    background-color: var(--primary-purple);
-    color: var(--text-light);
-    padding: 4rem 1rem;
 }
 
 .skills-content {
@@ -528,88 +364,6 @@ body {
     cursor: not-allowed;
 }
 
-/* Weather Section */
-.weather-section {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-purple) 100%);
-    padding: 4rem 1rem;
-    width: 100%;
-}
-
-.weather-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.weather-card {
-    background-color: var(--bg-darkest);
-    padding: 1.5rem;
-    border-radius: 20px;
-    border: 3px solid var(--accent-neon);
-    box-shadow: 0 0 15px rgba(0, 255, 157, 0.1);
-    transition: all 0.3s ease;
-}
-
-.weather-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 255, 157, 0.2);
-}
-
-.weather-card h3 {
-    color: var(--accent-neon);
-    text-shadow: 0 0 10px var(--neon-glow);
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    color: var(--text-light);
-}
-
-.weather-info img {
-    width: 64px;
-    height: 64px;
-    filter: drop-shadow(0 0 5px var(--neon-glow));
-}
-
-.weather-info .temperature {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--text-light);
-    text-shadow: 0 0 10px var(--neon-glow);
-}
-
-.weather-info .description {
-    color: var(--accent-neon);
-    text-transform: capitalize;
-    font-size: 1.2rem;
-}
-
-.weather-info .details {
-    color: var(--text-light);
-    font-size: 1rem;
-    text-align: center;
-}
-
-.weather-loading, 
-.weather-error {
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--text-light);
-    background-color: var(--bg-darkest);
-    border-radius: 20px;
-    border: 3px solid var(--accent-neon);
-    font-size: 1.2rem;
-}
-
 /* Animation keyframes */
 @keyframes fadeIn {
     from {
@@ -718,13 +472,6 @@ body {
         width: auto;
     }
 
-    .weather-container {
-        flex-direction: row;
-    }
-    
-    .weather-card {
-        flex: 1;
-    }
 }
 
     /* About Desktop */
@@ -815,37 +562,6 @@ body {
         min-width: 200px;
         display: block;
         margin: 0 auto;
-    }
-
-    /* Weather Desktop */
-    .weather-section {
-        padding: 5rem 2rem;
-    }
-
-    .weather-container {
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .weather-card {
-        flex: 1;
-        padding: 2rem;
-    }
-
-    .weather-info {
-        gap: 1.5rem;
-    }
-
-    .weather-info .temperature {
-        font-size: 3rem;
-    }
-
-    .weather-info .description {
-        font-size: 1.4rem;
-    }
-
-    .weather-info .details {
-        font-size: 1.1rem;
     }
 
     /* Footer Desktop */
