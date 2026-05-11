@@ -74,6 +74,8 @@ body {
     left: 0;
     z-index: 1000;
     display: flex;
+}
+
 .hero {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-purple) 100%);
     color: var(--text-light);

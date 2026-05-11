@@ -12,7 +12,7 @@ const Footer = () => {
                     <a href="https://github.com/MantasTek" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
                 <div className="footer-copyright">
-                    <p>&copy; 2024 Designed by mTek. All rights reserved.</p>
+                    <p>&copy; 2026 Designed by mTek. All rights reserved.</p>
                 </div>
             </div>
         </footer>

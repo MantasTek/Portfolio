@@ -1,13 +1,15 @@
 import React from 'react'
 
 function Portfolio() {
+    const baseUrl = import.meta.env.BASE_URL;
+
     return (
         <section id="portfolio" className="portfolio">
             <h2>My Projects</h2>
             <div className="portfolio-grid">
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="/images/project-placeholder.jpg" alt="Project 1" />
+                        <img src={`${baseUrl}images/project-placeholder.jpg`} alt="Project 1" />
                     </div>
                     <div className="project-info">
                         <h3>Portfolio Website</h3>
@@ -27,7 +29,7 @@ function Portfolio() {
                 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="/images/project-placeholder.jpg" alt="Project 2" />
+                        <img src={`${baseUrl}images/project-placeholder.jpg`} alt="Project 2" />
                     </div>
                     <div className="project-info">
                         <h3>BowlingHallManagement</h3>
@@ -47,7 +49,7 @@ function Portfolio() {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="/images/project-placeholder.jpg" alt="CryptoChatApp" />
+                        <img src={`${baseUrl}images/project-placeholder.jpg`} alt="CryptoChatApp" />
                     </div>
                     <div className="project-info">
                         <h3>CryptoChatApp</h3>
@@ -67,7 +69,7 @@ function Portfolio() {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="/images/project-placeholder.jpg" alt="IPScanner" />
+                        <img src={`${baseUrl}images/project-placeholder.jpg`} alt="IPScanner" />
                     </div>
                     <div className="project-info">
                         <h3>IPScanner</h3>

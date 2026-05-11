@@ -1,14 +1,16 @@
 import React from 'react';
 
 const Hero = () => {
+    const baseUrl = import.meta.env.BASE_URL;
+
     return (
         <section className="hero">
             <div className="hero-content">
-                <img src="/images/myphoto.jpg" alt="Mantas Petrovas portrait" className="portrait" />
+                <img src={`${baseUrl}images/myphoto.jpg`} alt="Mantas Petrovas portrait" className="portrait" />
                 <h1>Mantas Petrovas</h1>
                 <p className="tagline">Program Developer .NET</p>
                 <div className="hero-buttons">
-                <a href="./CV_Mantas.pdf" download className="cv-button">
+                <a href={`${baseUrl}Mantas_Petrovas_CV.pdf`} download className="cv-button">
                     Download CV
                 </a>
                     <div className="social-links">
